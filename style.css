@@ -13,6 +13,9 @@ table {
     max-width: 100%;
     text-align: center;
 }
+.tdhead{
+    text-align: right;
+}
 
 #profilepicturediv {
     text-align: center;
