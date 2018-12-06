@@ -1,5 +1,4 @@
 window.onload = function (e) {
-	
     liff.init(function (data) {
 	    liff.getProfile().then(function (profile) {
 		document.getElementById('displayimg').textContent = profile.userId;
@@ -7,8 +6,8 @@ window.onload = function (e) {
 	}).catch(function (error) {
 		window.alert("Error getting profile: " + error);
 	});
-        initializeApp(data);
-	    test();
+        // initializeApp(data);
+	//    test();
     });
 	
 };
