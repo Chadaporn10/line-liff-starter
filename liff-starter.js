@@ -66,7 +66,9 @@ function initializeApp(data) {
 }
 
 function test(){
-	document.getElementById('xx').textContent = "55555";
+	liff.getProfile().then(function (profile) {
+		document.getElementById('xx').textContent = profile.displayName;	
+	}
 }
 
 function toggleProfileData() {
