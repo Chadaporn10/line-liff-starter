@@ -66,7 +66,7 @@ function initializeApp(data) {
 }
 
 function test(){
-	window.alert("xxxxxx");
+	window.alert("i don't know");
 	document.getElementById('displayname').textContent = "55555";
 	//liff.getProfile().then(function (profile) {
 	//	document.getElementById('displayimg').textContent = profile.userId;
