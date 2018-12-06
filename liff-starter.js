@@ -67,7 +67,7 @@ function initializeApp(data) {
 
 function test(){
 	liff.getProfile().then(function (profile) {
-		document.getElementById('xx').textContent = profile.displayName;	
+		document.getElementById('displayname').textContent = profile.displayName;	
 	}
 }
 
