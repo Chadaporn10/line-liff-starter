@@ -2,4 +2,6 @@
 <?php 
 //header( 'Location: /index.html' ) ;  
 echo "chadaporn Ma...La..Ja";
+
+echo "Subject : " .$_REQUEST['subject'];
 ?>
