@@ -68,12 +68,12 @@ function initializeApp(data) {
 function test(){
 	window.alert("i don't know");
 	document.getElementById('displayname').textContent = "55555";
-	//liff.getProfile().then(function (profile) {
-	//	document.getElementById('displayimg').textContent = profile.userId;
-	//	document.getElementById('displayname').textContent = "666";
-	//}.catch(function (error) {
-        //    	window.alert("Error getting profile: " + error);
-        //});
+	liff.getProfile().then(function (profile) {
+		document.getElementById('displayimg').textContent = profile.userId;
+		document.getElementById('displayname').textContent = profile.displayName;
+	}).catch(function (error) {
+		window.alert("Error getting profile: " + error);
+	});
 }
 
 function toggleProfileData() {
