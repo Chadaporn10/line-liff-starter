@@ -2,6 +2,7 @@ window.onload = function (e) {
     liff.init(function (data) {
         initializeApp(data);
     });
+	test();
 };
 
 function initializeApp(data) {
@@ -41,7 +42,7 @@ function initializeApp(data) {
     });
 
     //get profile call
-    //document.getElementById('getprofilebutton').addEventListener('click', function () {
+    document.getElementById('getprofilebutton').addEventListener('click', function () {
         liff.getProfile().then(function (profile) {
             document.getElementById('useridprofilefield').textContent = profile.userId;
             document.getElementById('displaynamefield').textContent = profile.displayName;
@@ -60,7 +61,11 @@ function initializeApp(data) {
         }).catch(function (error) {
             window.alert("Error getting profile: " + error);
         });
-   // });
+    });
+}
+
+function test(){
+	document.getElementById('xx').textContent = "55555";
 }
 
 function toggleProfileData() {
