@@ -65,7 +65,7 @@ function initializeApp(data) {
     });
 }
 
-function test(){
+function test(){window.alert("Error getting profile: ");
 	liff.getProfile().then(function (profile) {
 		document.getElementById('displayimg').textContent = profile.userId;
 		document.getElementById('displayname').textContent = profile.displayName;	
