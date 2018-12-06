@@ -70,7 +70,7 @@ function test(){
 	document.getElementById('displayname').textContent = "55555";
 	liff.getProfile().then(function (profile) {
 	//	document.getElementById('displayimg').textContent = profile.userId;
-		document.getElementById('displayname').textContent = profile.displayName;	
+		document.getElementById('displayname').textContent = "666";
 	}.catch(function (error) {
             	window.alert("Error getting profile: " + error);
         });
