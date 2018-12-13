@@ -2,7 +2,9 @@
 html{
     font-size: 11px;
 }
-
+body {
+     background: yellow;
+ }
 table {
     width: 100%;
     table-layout:fixed;
